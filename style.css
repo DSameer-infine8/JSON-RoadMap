@@ -1,0 +1,257 @@
+:root{
+        --primary-100: #FF6600;
+            --primary-200: #ff983f;
+            --primary-300: #ffffa1;
+            --accent-100: #F5F5F5;
+            --accent-200: #929292;
+            --text-100: #FFFFFF;
+            --text-200: #e0e0e0;
+            --bg-100: #1D1F21;
+            --bg-200: #2c2e30;
+            --bg-300: #444648;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-100);
+    overflow-x: hidden;
+}
+
+.top{
+    height: 300px;
+    width: 100vw;
+}
+
+.main{
+    display: flex;
+    background-color: var(--bg-200);
+    width: 95vw;
+    height: 4800px;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.skill-title{
+    font-size: 3rem;
+    background-color: #000000;
+    color: #F5F5F5;
+    padding: 5px 15px;
+    border-radius: 2rem;
+    margin-top: 10px;
+}
+
+.road {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 40px;
+    height: 4450px;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 20px;
+}
+
+.center-line {
+    margin: 0 auto;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-image: repeating-linear-gradient(to bottom,
+            white 0 40px,
+            transparent 40px 80px);
+}
+
+.grid-container {
+    position: absolute;
+    top: 50px;
+    display: grid;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.grid-line{
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    padding: 10px 0;
+    margin: 30px 0;
+
+}
+
+h1 {
+    background-color: #ff983f;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.right h2{
+    padding: 15px;
+    color: var(--primary-300);
+}
+
+.left h2 {
+    padding: 15px;
+    color: var(--primary-300);
+}
+
+.left {
+    display: flex;
+    align-items:end;
+    justify-content: right;
+    flex-direction: column;
+}
+
+li{
+    display: flex;
+    padding:5px;
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+.long{
+    display: flex;
+    flex-direction: column;
+}
+
+.left li span{
+        display: flex;
+            align-items: center;
+            /* Align vertically center */
+            justify-content: flex-end;
+}
+
+.left li {
+    position: relative;
+    display: flex;
+    /* Align vertically center */
+    justify-content: flex-end;
+    /* Items in row from left */
+    flex-direction: row;
+    /* Row direction (default) */
+    gap: 10px;
+    /* Optional: space between checkbox and label */
+    padding: 5px 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.left label{
+    order:1;
+}
+
+.left strong{
+    order: 1;
+        position: absolute;
+        right: 0;
+            top: -4px;
+}
+ul{
+    padding: 15px;
+}
+
+.display {
+    display: none;
+}
+
+.long {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.container {
+    --input-focus: var(--primary-100);
+    --input-out-of-focus: #ccc;
+    --bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;
+    position: relative;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--input-out-of-focus);
+    transition: all 0.3s;
+}
+
+.container input:checked~.checkmark {
+    background-color: var(--input-focus);
+}
+
+.checkmark:after {
+    content: "";
+    width: 7px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: none;
+    border: solid var(--bg-color);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.ticking {
+    display: flex;
+    align-items: center;
+}
+
+.left .yes .topic .ticking label {
+    order: 2;
+    /* move label after text */
+    margin-left: 8px;
+    /* optional spacing */
+}
+
+.left .yes .topic .ticking::after {
+    content: attr(data-label);
+    order: 1;
+}
+
+.ticking::after {
+    content: attr(data-label);
+}
+
+label {
+    margin: 0 10px;
+}

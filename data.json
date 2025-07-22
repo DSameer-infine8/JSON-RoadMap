@@ -1,0 +1,1369 @@
+{
+    "back":{
+  "title": "Back-End Developer Roadmap",
+  "goal": "Become a Job-Ready Back-End Developer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Prerequisites",
+      "topics": [
+        "Computer Basics (File system, OS, IDEs like VS Code, terminals)",
+        "Command Line (cd, ls, mkdir, rm, etc.)",
+        "Typing Speed (40+ WPM is ideal)",
+        "Understanding How the Web Works (HTTP/S, DNS, IP, domain, server, client, browser)",
+        "Internet Protocols (HTTP Methods, Status Codes, SSL, Cookies, Headers)"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "Programming Language",
+      "recommended_languages": ["JavaScript (Node.js)", "Python", "Java", "Go"],
+      "topics": [
+        {
+          "Core Language Concepts": [
+            "Syntax, Variables, Data Types",
+            "Control Structures (loops, conditions)",
+            "Functions (declaration, parameters, scope)",
+            "Arrays, Lists, Dictionaries/Objects",
+            "String Manipulation",
+            "Error Handling",
+            "OOP (Classes, Inheritance, Encapsulation)",
+            "File I/O",
+            "Modules/Packages"
+          ]
+        },
+        {
+          "Best Choices with Frameworks": [
+            "JavaScript → Node.js with Express",
+            "Python → Django or Flask",
+            "Java → Spring Boot",
+            "Go → Gin, Fiber"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Databases & Storage",
+      "topics": [
+        {
+          "Relational Databases (SQL)": ["PostgreSQL", "MySQL", "SQLite"]
+        },
+        {
+          "NoSQL Databases": ["MongoDB", "Redis"]
+        },
+        {
+          "Concepts": [
+            "Database Schema Design",
+            "CRUD Operations",
+            "Joins (SQL)",
+            "Indexes & Optimization",
+            "Aggregations",
+            "Data Relationships (1:1, 1:N, M:N)",
+            "Connection from code (ORM or Drivers)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Server, APIs & Frameworks",
+      "topics": [
+        "Express.js, Flask, Django, Spring Boot, Fiber",
+        {
+          "REST APIs": [
+            "HTTP Methods (GET, POST, PUT, DELETE)",
+            "Route Design & RESTful Principles",
+            "Path vs Query Params",
+            "Status Codes (200, 201, 400, 404, 500, etc.)",
+            "API Documentation (Swagger / Postman)"
+          ]
+        },
+        {
+          "Authentication & Authorization": [
+            "JWT (JSON Web Token)",
+            "OAuth2 (Google, GitHub login)",
+            "Cookies & Sessions"
+          ]
+        },
+        {
+          "Middleware": [
+            "Logging",
+            "Error Handling",
+            "Authentication Middleware",
+            "Rate Limiting"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "4",
+      "title": "Security & Best Practices",
+      "topics": [
+        "Hashing Passwords (bcrypt, Argon2)",
+        "Environment Variables (.env)",
+        "Helmet.js (for HTTP headers)",
+        "Input Validation (Joi, express-validator)",
+        "SQL Injection, XSS, CSRF protection",
+        "HTTPS & SSL Basics",
+        "CORS (Cross-Origin Resource Sharing)",
+        "Security Headers"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Development Tools & Ecosystem",
+      "topics": [
+        {
+          "Tool Types": {
+            "Code Editor": ["Visual Studio Code"],
+            "Terminal Tools": ["Bash", "Zsh"],
+            "Version Control": ["Git & GitHub"],
+            "API Clients": ["Postman", "Insomnia"],
+            "Monitoring": ["Loggers (Winston, Morgan)", "PM2"],
+            "Linting & Formatting": ["ESLint", "Prettier", "Black (Python)"]
+          }
+        }
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Deployment, DevOps & CI/CD",
+      "topics": [
+        {
+          "Hosting Providers": [
+            "Render",
+            "Railway",
+            "Vercel",
+            "DigitalOcean",
+            "AWS"
+          ]
+        },
+        {
+          "Deployment Skills": [
+            "Running Servers (Node, Gunicorn, Nginx)",
+            "PM2 (Node.js process manager)",
+            "Nginx or Apache as reverse proxy",
+            "Load Balancing Concepts"
+          ]
+        },
+        {
+          "CI/CD Tools": [
+            "GitHub Actions",
+            "Docker",
+            "Basic Shell Scripting"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "7",
+      "title": "ORMs & Migrations",
+      "topics": [
+        {
+          "SQL ORM": ["Sequelize", "SQLAlchemy", "Prisma", "Hibernate"]
+        },
+        {
+          "NoSQL ODM": ["Mongoose"]
+        },
+        {
+          "Concepts": [
+            "Migrations & Rollbacks",
+            "Model Relationships",
+            "Query Builders"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Testing & Debugging",
+      "topics": [
+        "Unit Testing (Jest, Mocha, PyTest)",
+        "Integration Testing",
+        "Test-Driven Development (TDD)",
+        "Debugging using IDE, Console, Logs",
+        "Postman/Newman API Tests"
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Project Structure & Architecture",
+      "topics": [
+        {
+          "Structure Patterns": [
+            "MVC (Model-View-Controller)",
+            "Service/Repository Pattern",
+            "Clean Architecture",
+            "Folder Naming Conventions"
+          ]
+        },
+        {
+          "Code Quality": [
+            "DRY (Don't Repeat Yourself)",
+            "KISS (Keep It Simple Stupid)",
+            "SOLID Principles",
+            "Code Reviews"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "10",
+      "title": "WebSockets & Real-Time Apps (Optional)",
+      "topics": [
+        "Socket.io (Node.js)",
+        "Channels (Django)",
+        "Use cases: Chat apps, Live dashboards"
+      ]
+    },
+    {
+      "level": "11",
+      "title": "Extra Concepts to Stand Out",
+      "topics": [
+        "GraphQL Basics (Apollo Server, Graphene)",
+        "Caching (Redis)",
+        "Message Brokers (RabbitMQ, Kafka)",
+        "Background Jobs (BullMQ, Celery)",
+        "Rate Limiting (express-rate-limit)",
+        "Cron Jobs (node-cron, APScheduler)"
+      ]
+    },
+    {
+      "level": "12",
+      "title": "Portfolio, Resume & Job Preparation",
+      "topics": [
+        {
+          "Portfolio Projects": [
+            "RESTful API (CRUD app, e.g., Blog)",
+            "Auth System with JWT",
+            "API + DB + Login + Deployment",
+            "E-commerce Backend",
+            "Chat Server (WebSocket)",
+            "Job Portal Backend"
+          ]
+        },
+        {
+          "Resume & GitHub Tips": [
+            "Keep resume 1 page",
+            "Highlight APIs built, tools used, deployments",
+            "Star your best GitHub repos",
+            "Write READMEs for projects"
+          ]
+        },
+        {
+          "LinkedIn & Networking": [
+            "Post your learning progress",
+            "Connect with developers",
+            "Ask for feedback on projects"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "Bonus",
+      "title": "Learn TypeScript (For Node.js Developers)",
+      "topics": [
+        "Typing Express Middleware",
+        "Interfaces, Types, Generics",
+        "TS with ORM (Prisma, Sequelize)",
+        "tsconfig.json configuration"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Code Editor": ["Visual Studio Code"],
+    "Version Control": ["Git", "GitHub"],
+    "API Testing": ["Postman", "Insomnia"],
+    "Deployment": ["Render", "Railway", "DigitalOcean", "AWS"],
+    "Containers": ["Docker"],
+    "Monitoring": ["PM2", "Winston", "LogRocket"],
+    "Database GUI": ["pgAdmin", "Mongo Compass"],
+    "Documentation": ["Swagger", "Postman Docs"],
+    "Others": ["GitHub Actions", "Nginx", "Docker Hub"]
+  },
+  "timeline": [
+    { "week": "1–2", "focus": "Language Basics (Python/JS/Java)" },
+    { "week": "3–4", "focus": "Git, CLI, HTTP, REST APIs" },
+    { "week": "5–6", "focus": "Express/Django + Routing + Middleware" },
+    { "week": "7–8", "focus": "Database Integration & CRUD" },
+    { "week": "9–10", "focus": "Authentication, JWT, API Testing" },
+    { "week": "11–12", "focus": "Project 1: Blog API" },
+    { "week": "13–14", "focus": "Docker, Deployment, GitHub Actions" },
+    { "week": "15–16", "focus": "Project 2: Auth + DB + Deploy" },
+    { "week": "17–18", "focus": "Testing, Clean Architecture" },
+    { "week": "19–20", "focus": "Real-time, Extra Features, Final Portfolio" },
+    { "week": "21+", "focus": "Apply to Jobs + Contribute to Open Source" }
+  ]
+},
+
+
+"back.js":{
+  "title": "Back-End Developer Roadmap (JavaScript - Node.js)",
+  "goal": "Become a Job-Ready Back-End Developer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Prerequisites",
+      "topics": [
+        "Computer Basics (File system, OS, IDEs like VS Code, terminals)",
+        "Command Line (cd, ls, mkdir, rm, etc.)",
+        "Typing Speed (40+ WPM)",
+        "Understanding How the Web Works (HTTP/S, DNS, IP, domain, server, client, browser)",
+        "Internet Protocols (HTTP Methods, Status Codes, SSL, Cookies, Headers)"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "Programming Language: JavaScript (Node.js)",
+      "topics": [
+        {
+          "Core Language Concepts": [
+            "Syntax, Variables, Data Types",
+            "Control Structures (loops, conditions)",
+            "Functions (declaration, parameters, scope)",
+            "Arrays, Objects",
+            "String Manipulation",
+            "Error Handling",
+            "OOP (Classes, Inheritance, Encapsulation)",
+            "File I/O",
+            "Modules/Packages"
+          ]
+        },
+        {
+          "Frameworks": [
+            "Node.js with Express"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Databases & Storage",
+      "topics": [
+        {
+          "Relational Databases (SQL)": [
+            "PostgreSQL",
+            "MySQL",
+            "SQLite"
+          ]
+        },
+        {
+          "NoSQL Databases": [
+            "MongoDB",
+            "Redis"
+          ]
+        },
+        {
+          "Concepts": [
+            "Database Schema Design",
+            "CRUD Operations",
+            "Joins (SQL)",
+            "Indexes & Optimization",
+            "Aggregations",
+            "Data Relationships (1:1, 1:N, M:N)",
+            "Connection from code (ORM or Drivers)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Server, APIs & Frameworks",
+      "topics": [
+        "HTTP Server Handling (Express.js)",
+        "REST APIs: HTTP Methods, Route Design, RESTful Principles",
+        "Path vs Query Params",
+        "Status Codes (200, 201, 400, 404, 500, etc.)",
+        "API Documentation (Swagger / Postman)",
+        "Authentication & Authorization (JWT, OAuth2, Cookies & Sessions)",
+        "Middleware: Logging, Error Handling, Auth Middleware, Rate Limiting"
+      ]
+    },
+    {
+      "level": "4",
+      "title": "Security & Best Practices",
+      "topics": [
+        "Hashing Passwords (bcrypt)",
+        "Environment Variables (.env)",
+        "Helmet.js",
+        "Input Validation (Joi, express-validator)",
+        "SQL Injection, XSS, CSRF Protection",
+        "HTTPS & SSL Basics",
+        "CORS",
+        "Security Headers"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Development Tools & Ecosystem",
+      "topics": [
+        {
+          "Tool Type": {
+            "Code Editor": "Visual Studio Code",
+            "Terminal Tools": "Bash, Zsh",
+            "Version Control": "Git & GitHub",
+            "API Clients": "Postman, Insomnia",
+            "Monitoring": "Winston, Morgan, PM2",
+            "Linting & Formatting": "ESLint, Prettier"
+          }
+        }
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Deployment, DevOps & CI/CD",
+      "topics": [
+        {
+          "Hosting Providers": [
+            "Render",
+            "Railway",
+            "Vercel",
+            "DigitalOcean",
+            "AWS"
+          ]
+        },
+        {
+          "Deployment Skills": [
+            "Running Servers (Node)",
+            "PM2",
+            "Nginx (as reverse proxy)",
+            "Load Balancing Concepts"
+          ]
+        },
+        {
+          "CI/CD Tools": [
+            "GitHub Actions",
+            "Docker",
+            "Basic Shell Scripting"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "7",
+      "title": "ORMs & Migrations",
+      "topics": [
+        {
+          "SQL ORM": [
+            "Sequelize",
+            "Prisma"
+          ]
+        },
+        {
+          "NoSQL ODM": [
+            "Mongoose"
+          ]
+        },
+        {
+          "Concepts": [
+            "Migrations & Rollbacks",
+            "Model Relationships",
+            "Query Builders"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Testing & Debugging",
+      "topics": [
+        "Unit Testing (Jest, Mocha)",
+        "Integration Testing",
+        "Test-Driven Development (TDD)",
+        "Debugging using IDE, Console, Logs",
+        "Postman/Newman API Tests"
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Project Structure & Architecture",
+      "topics": [
+        "MVC (Model-View-Controller)",
+        "Service/Repository Pattern",
+        "Clean Architecture",
+        "Folder Naming Conventions",
+        "Code Quality: DRY, KISS, SOLID",
+        "Code Reviews"
+      ]
+    },
+    {
+      "level": "10",
+      "title": "WebSockets & Real-Time Apps (Optional)",
+      "topics": [
+        "Socket.io",
+        "Use cases: Chat apps, Live dashboards"
+      ]
+    },
+    {
+      "level": "11",
+      "title": "Extra Concepts to Stand Out",
+      "topics": [
+        "GraphQL Basics (Apollo Server)",
+        "Caching (Redis)",
+        "Message Brokers (RabbitMQ, Kafka)",
+        "Background Jobs (BullMQ)",
+        "Rate Limiting (express-rate-limit)",
+        "Cron Jobs (node-cron)"
+      ]
+    },
+    {
+      "level": "12",
+      "title": "Portfolio, Resume & Job Preparation",
+      "topics": [
+        {
+          "Portfolio Projects": [
+            "RESTful API (CRUD app, e.g., Blog)",
+            "Auth System with JWT",
+            "API + DB + Login + Deployment",
+            "E-commerce Backend",
+            "Chat Server (WebSocket)",
+            "Job Portal Backend"
+          ]
+        },
+        {
+          "Resume & GitHub Tips": [
+            "Keep resume 1 page",
+            "Highlight APIs built, tools used, deployments",
+            "Star your best GitHub repos",
+            "Write READMEs for projects"
+          ]
+        },
+        {
+          "LinkedIn & Networking": [
+            "Post your learning progress",
+            "Connect with developers",
+            "Ask for feedback on projects"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "Bonus",
+      "title": "Learn TypeScript (For Node.js Developers)",
+      "topics": [
+        "Typing Express Middleware",
+        "Interfaces, Types, Generics",
+        "TS with ORM (Prisma, Sequelize)",
+        "tsconfig.json configuration"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Code Editor": ["Visual Studio Code"],
+    "Version Control": ["Git", "GitHub"],
+    "API Testing": ["Postman", "Insomnia"],
+    "Deployment": ["Render", "Railway", "DigitalOcean", "AWS"],
+    "Containers": ["Docker"],
+    "Monitoring": ["PM2", "Winston", "LogRocket"],
+    "Database GUI": ["pgAdmin", "Mongo Compass"],
+    "Documentation": ["Swagger", "Postman Docs"],
+    "Others": ["GitHub Actions", "Nginx", "Docker Hub"]
+  },
+  "timeline": [
+    { "week": "1–2", "focus": "Language Basics (JavaScript)" },
+    { "week": "3–4", "focus": "Git, CLI, HTTP, REST APIs" },
+    { "week": "5–6", "focus": "Express.js + Routing + Middleware" },
+    { "week": "7–8", "focus": "Database Integration & CRUD" },
+    { "week": "9–10", "focus": "Authentication, JWT, API Testing" },
+    { "week": "11–12", "focus": "Project 1: Blog API" },
+    { "week": "13–14", "focus": "Docker, Deployment, GitHub Actions" },
+    { "week": "15–16", "focus": "Project 2: Auth + DB + Deploy" },
+    { "week": "17–18", "focus": "Testing, Clean Architecture" },
+    { "week": "19–20", "focus": "Real-time, Extra Features, Final Portfolio" },
+    { "week": "21+", "focus": "Apply to Jobs + Contribute to Open Source" }
+  ]
+},
+
+"front":{
+  "title": "Front-End Developer Roadmap",
+  "goal": "Become a Job-Ready Front-End Developer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Prerequisites",
+      "topics": [
+        "Basic Computer Skills (file management, using IDEs like VS Code, typing efficiently)",
+        "Internet & Browser Understanding (DNS, HTTP/HTTPS, domain names, how websites work)",
+        "Typing Speed (Aim for 40+ WPM)"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "Web Fundamentals (HTML, CSS, JS)",
+      "topics": [
+        {
+          "HTML5": [
+            "Semantic Tags (<article>, <section>, <nav>)",
+            "Forms and Validations",
+            "Media (<audio>, <video>)",
+            "Meta tags (SEO basics)",
+            "Accessibility (aria-*, alt text)"
+          ]
+        },
+        {
+          "CSS3": [
+            "Box Model",
+            "Positioning (absolute, relative, etc.)",
+            "Flexbox & Grid",
+            "Pseudo-classes and Elements",
+            "Media Queries (Responsive Design)",
+            "CSS Units (em, rem, %, vw, vh)",
+            "CSS Variables"
+          ]
+        },
+        {
+          "JavaScript (ES6+)": [
+            "Variables (let, const, var)",
+            "Data Types & Operators",
+            "Functions (arrow, callbacks, IIFE)",
+            "Arrays & Objects",
+            "Loops & Conditions",
+            "DOM Manipulation (querySelector, addEventListener)",
+            "Events & Event Delegation",
+            "JSON & LocalStorage",
+            "Fetch API (basic API calls)",
+            "Error Handling (try/catch)"
+          ]
+        },
+        {
+          "Tools to Learn": [
+            "Visual Studio Code",
+            "Live Server Extension",
+            "Chrome DevTools"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Version Control & GitHub",
+      "topics": [
+        "Git Basics (init, add, commit, push, pull, clone)",
+        "Branching & Merging",
+        "Pull Requests",
+        "GitHub Profile Optimization",
+        "Hosting via GitHub Pages"
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Advanced Styling (UI/UX)",
+      "topics": [
+        {
+          "CSS Preprocessors": ["SASS / SCSS"]
+        },
+        {
+          "CSS Frameworks": ["Tailwind CSS", "Bootstrap"]
+        },
+        {
+          "Design Systems & UI Patterns": [
+            "Responsive and Mobile-First Design",
+            "Atomic Design",
+            "Design Tokens"
+          ]
+        },
+        {
+          "Tools to Learn": [
+            "Figma (UI Design, Prototyping)",
+            "Adobe XD (optional)",
+            "Canva (for graphics/UI)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "4",
+      "title": "JavaScript Mastery & Modern Frontend",
+      "topics": [
+        {
+          "ES6+ Advanced Topics": [
+            "Destructuring, Spread/Rest",
+            "Promises, async/await",
+            "Modules (import/export)",
+            "Closures & Scope",
+            "Higher-Order Functions",
+            "Array Methods (map, filter, reduce)"
+          ]
+        },
+        {
+          "Package Managers": ["npm", "yarn (optional)"]
+        },
+        {
+          "Module Bundlers & Tools": ["Vite", "Parcel / Webpack (basic idea)"]
+        }
+      ]
+    },
+    {
+      "level": "5",
+      "title": "React.js (Primary Frontend Library)",
+      "topics": [
+        {
+          "Core React Concepts": [
+            "JSX & Component Structure",
+            "Functional Components & Hooks",
+            "State & Props",
+            "useEffect, useState, useRef",
+            "Component Communication",
+            "Conditional Rendering",
+            "Lists & Keys"
+          ]
+        },
+        {
+          "Advanced React": [
+            "Context API",
+            "Custom Hooks",
+            "React Router (v6+)",
+            "Performance Optimization",
+            "Lazy Loading, Suspense"
+          ]
+        },
+        {
+          "State Management": [
+            "Redux Toolkit (Industry Standard)",
+            "Zustand (lightweight alt)"
+          ]
+        },
+        {
+          "Tools to Learn": [
+            "React Developer Tools (Chrome extension)",
+            "ESLint + Prettier"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "6",
+      "title": "RESTful APIs & Backend Integration",
+      "topics": [
+        "HTTP Methods: GET, POST, PUT, DELETE",
+        "Fetch API / Axios",
+        "API Status Codes",
+        "Authentication Tokens (JWT)",
+        "Consuming Public APIs (e.g., GitHub, OpenWeather)"
+      ]
+    },
+    {
+      "level": "7",
+      "title": "Industry Tools & Practices",
+      "topics": [
+        {
+          "Build Tools": ["Vite / Webpack", "Babel", "ESlint, Prettier"]
+        },
+        {
+          "DevOps Basics": ["GitHub Actions", "Netlify", "Vercel", "Environment Variables"]
+        },
+        {
+          "Browser Compatibility": [
+            "Polyfills",
+            "Testing Across Browsers (BrowserStack, manual testing)"
+          ]
+        },
+        {
+          "Performance": [
+            "Lighthouse Audit",
+            "Lazy Loading",
+            "Debouncing/Throttling",
+            "Image Optimization (WebP)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Testing",
+      "topics": [
+        {
+          "Testing Libraries": [
+            "Jest (Unit Testing)",
+            "React Testing Library (Component Testing)",
+            "Cypress (E2E Testing)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Component Libraries & UI Kits",
+      "topics": [
+        "Material UI",
+        "Shadcn UI (for Tailwind + Radix UI)",
+        "Chakra UI",
+        "Ant Design"
+      ]
+    },
+    {
+      "level": "10",
+      "title": "Web Accessibility (A11y) & SEO",
+      "topics": [
+        {
+          "Accessibility": [
+            "Keyboard Navigation",
+            "ARIA Roles",
+            "Semantic HTML"
+          ]
+        },
+        {
+          "SEO Basics": [
+            "Meta Tags",
+            "Sitemap & Robots.txt",
+            "Open Graph Tags"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "11",
+      "title": "Portfolio, Resume & Job Hunt",
+      "topics": [
+        {
+          "Portfolio Must-Haves": [
+            "3–5 polished projects",
+            "Mobile responsive",
+            "Hosted (Vercel/Netlify)",
+            "GitHub linked",
+            "About, Contact, Resume Sections"
+          ]
+        },
+        {
+          "Projects to Build": [
+            "Responsive Multi-Page Website",
+            "Dashboard UI (with charts)",
+            "E-commerce frontend (React)",
+            "Weather App (API usage)",
+            "Blog Website (React Router, CMS or JSON)"
+          ]
+        },
+        {
+          "Resume Tips": [
+            "1 Page Max",
+            "Skill-based bullet points",
+            "Project links & GitHub included"
+          ]
+        },
+        {
+          "LinkedIn": [
+            "Banner + Profile Image",
+            "Catchy Headline",
+            "Regular Posts about your learning"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "Bonus",
+      "title": "Learn TypeScript",
+      "topics": [
+        "Static Typing in JS",
+        "Interfaces, Types",
+        "TypeScript with React (tsconfig, props types)"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Code Editor": ["VS Code"],
+    "Browser": ["Chrome", "Firefox"],
+    "Design": ["Figma"],
+    "Version Control": ["Git", "GitHub"],
+    "Hosting": ["Vercel", "Netlify"],
+    "Others": ["Postman", "Lighthouse", "Chrome DevTools"]
+  },
+  "timeline": [
+    { "week": "1–2", "focus": "HTML, CSS" },
+    { "week": "3–5", "focus": "JavaScript (Basics to Intermediate)" },
+    { "week": "6–7", "focus": "Git, GitHub, Responsive Design" },
+    { "week": "8–10", "focus": "Advanced JS, DOM, APIs" },
+    { "week": "11–13", "focus": "React (Fundamentals + Routing + Hooks)" },
+    { "week": "14–15", "focus": "Projects" },
+    { "week": "16–18", "focus": "Redux, Component Libraries, SEO" },
+    { "week": "19–20", "focus": "Testing, Accessibility, Final Portfolio" },
+    { "week": "21+", "focus": "Apply for Jobs, Network on LinkedIn" }
+  ]
+},
+"db":{
+  "title": "Database Developer Roadmap",
+  "goal": "Become a Job-Ready Database Developer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Foundations of Databases",
+      "topics": [
+        "What is a database?",
+        "Difference between DBMS and RDBMS",
+        "Types of Databases: Relational, NoSQL, NewSQL, In-memory, Graph, Time-Series, Document Store",
+        "Data vs. Information",
+        "Primary Key, Foreign Key, Composite Key",
+        "ACID properties"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "SQL Mastery",
+      "topics": [
+        "DDL, DML, DCL, TCL commands",
+        "Joins (INNER, OUTER, LEFT, RIGHT, SELF)",
+        "Subqueries, Nested queries",
+        "Views, Indexes, Stored Procedures",
+        "Functions (Scalar, Aggregate)",
+        "Triggers",
+        "Window functions (ROW_NUMBER, RANK, DENSE_RANK)",
+        "Normalization & Denormalization",
+        "Constraints",
+        "Query Optimization"
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Database Design & Modeling",
+      "topics": [
+        "Entity-Relationship Diagram (ERD)",
+        "Relational Schema",
+        "UML for database design",
+        "One-to-One, One-to-Many, Many-to-Many relationships",
+        "Normalization Forms (1NF to 5NF)"
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Advanced Database Concepts",
+      "topics": [
+        "Transactions",
+        "Concurrency control",
+        "Deadlocks",
+        "Locking mechanisms",
+        "Indexes (B-Tree, Bitmap, Hash, Full-text)",
+        "Query execution plans",
+        "Materialized views",
+        "Partitioning and Sharding",
+        "Replication"
+      ]
+    },
+    {
+      "level": "4",
+      "title": "Working with NoSQL Databases",
+      "topics": [
+        "Key-Value Stores: Redis, Riak",
+        "Document Stores: MongoDB, CouchDB",
+        "Column Stores: Cassandra, HBase",
+        "Graph Databases: Neo4j",
+        "CAP theorem",
+        "BASE vs. ACID",
+        "NoSQL modeling techniques"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Database Programming",
+      "topics": [
+        "PL/SQL or T-SQL",
+        "Writing stored procedures and functions",
+        "Error handling",
+        "Cursor and looping logic",
+        "Data structures in DBs (arrays, JSON, XML support)",
+        "Calling database logic from application code (Node.js, Python, Java, etc.)"
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Database Administration Basics",
+      "topics": [
+        "Backup and Restore",
+        "User and Role Management",
+        "Security Best Practices",
+        "Monitoring and Tuning",
+        "Using EXPLAIN plans",
+        "High Availability",
+        "Failover & Disaster Recovery"
+      ]
+    },
+    {
+      "level": "7",
+      "title": "Cloud & Distributed Databases",
+      "topics": [
+        "Amazon RDS, Aurora",
+        "Google Cloud SQL, BigQuery",
+        "Azure SQL",
+        "CockroachDB",
+        "Distributed systems basics",
+        "ETL pipelines and tools",
+        "Data Warehousing vs. OLTP"
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Tools & Ecosystem",
+      "topics": [
+        {
+          "SQL IDEs": ["DBeaver", "DataGrip", "HeidiSQL", "SQL Server Management Studio"],
+          "NoSQL Tools": ["MongoDB Compass", "Studio 3T", "Robo 3T"],
+          "Monitoring": ["Prometheus", "Grafana", "Percona Toolkit"],
+          "Modeling": ["dbdiagram.io", "Draw.io", "MySQL Workbench"],
+          "Migration": ["Flyway", "Liquibase"],
+          "Scripting": ["Python", "Node.js", "Shell"]
+        }
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Portfolio & Job Prep",
+      "topics": [
+        "Build mini projects: Library System, E-commerce DB, Hospital Management, Movie DB, Employee Payroll",
+        "Design ER diagrams for each project",
+        "Query optimization and explain plan showcase",
+        "Create GitHub repos with schema, seed data, queries",
+        "Write case studies of query challenges",
+        "Update LinkedIn and resume with DB projects",
+        "Contribute to open source (e.g., SQLFluff, data validation libs)"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "SQL IDEs": ["DBeaver", "DataGrip", "HeidiSQL", "SSMS"],
+    "NoSQL": ["MongoDB Compass", "Neo4j Browser", "RedisInsight"],
+    "Cloud": ["AWS RDS", "Azure SQL", "Google BigQuery", "CockroachDB"],
+    "Modeling Tools": ["Draw.io", "Lucidchart", "MySQL Workbench"],
+    "ETL Tools": ["Apache Nifi", "Airflow", "Talend", "DBT"],
+    "Monitoring": ["Prometheus", "Percona Toolkit", "Nagios"],
+    "Migration": ["Flyway", "Liquibase"],
+    "Languages": ["SQL", "PL/SQL", "Python", "Java", "Node.js", "Shell"]
+  },
+  "timeline": [
+    {"week": "1–2", "focus": "DB basics, RDBMS, SQL intro"},
+    {"week": "3–4", "focus": "SQL queries, Joins, Constraints"},
+    {"week": "5–6", "focus": "Advanced SQL, Optimization"},
+    {"week": "7–8", "focus": "ERDs, Modeling, Relationships"},
+    {"week": "9–10", "focus": "NoSQL: MongoDB, Redis"},
+    {"week": "11–12", "focus": "Admin basics, Backups, Security"},
+    {"week": "13–14", "focus": "Cloud DBs, Distributed concepts"},
+    {"week": "15–16", "focus": "Build 2 full database projects"},
+    {"week": "17–18", "focus": "Tools, Automation, ETL, Portfolio"},
+    {"week": "19–20", "focus": "Resume, GitHub, Interview prep"}
+  ]
+}
+
+,
+
+"mongoDB":{
+  "title": "Database Developer Roadmap (MongoDB Focused)",
+  "goal": "Become a Job-Ready Database Developer with MongoDB",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Database Foundations",
+      "topics": [
+        "What is a database?",
+        "Types of databases (Relational vs Non-Relational)",
+        "CAP Theorem (Consistency, Availability, Partition Tolerance)",
+        "Database Design Principles",
+        "Data Modeling Basics",
+        "ACID vs BASE properties"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "Core MongoDB (Document Database)",
+      "topics": [
+        "BSON vs JSON",
+        "Collections & Documents",
+        "MongoDB Data Types",
+        "CRUD Operations",
+        "Aggregation Framework",
+        "Indexing in MongoDB",
+        "Schema Design (Embedded vs Referenced)",
+        "MongoDB Query Optimization",
+        "Mongo Shell & MongoDB Compass",
+        "Working with ObjectId and Dates",
+        "Capped Collections, TTL Indexes"
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Advanced MongoDB",
+      "topics": [
+        "Sharding",
+        "Replica Sets",
+        "Change Streams",
+        "Multi-document Transactions",
+        "Geospatial Queries",
+        "Text Search",
+        "Advanced Aggregation Pipelines",
+        "MongoDB Atlas",
+        "RBAC (Role-Based Access Control)",
+        "Backup and Restore"
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Interfacing with MongoDB via Programming",
+      "topics": [
+        "JavaScript (Node.js) Basics",
+        "MongoDB Node.js Driver",
+        "Using Mongoose ODM",
+        "Connecting MongoDB with Express.js",
+        "Async/Await with MongoDB",
+        "Schema Validation",
+        "Error Handling"
+      ]
+    },
+    {
+      "level": "4",
+      "title": "Tools & Software",
+      "topics": [
+        "MongoDB Compass",
+        "Robo 3T",
+        "Mongo Shell",
+        "mongosh",
+        "Postman",
+        "MongoDB Atlas",
+        "MongoDB Ops Manager",
+        "MongoDB Realm"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Deployment and DevOps",
+      "topics": [
+        "Docker with MongoDB",
+        "Volumes and Persistent Storage",
+        "CI/CD Basics",
+        "Monitoring with Atlas or Grafana",
+        "Environment Configuration (.env)",
+        "Secure Deployment",
+        "Replica Set Configuration",
+        "High Availability"
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Version Control & Collaboration",
+      "topics": [
+        "Git & GitHub",
+        "Schema Versioning",
+        "Migration Scripts",
+        "Branching and Pull Requests"
+      ]
+    },
+    {
+      "level": "7",
+      "title": "Real-World Projects & Practice",
+      "topics": [
+        "Inventory Management System",
+        "Blog Database",
+        "E-Commerce Catalog",
+        "Student Management System",
+        "IoT Data Storage",
+        "Real-time Chat DB Design",
+        "Kaggle or Public Dataset Projects"
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Cloud and Serverless",
+      "topics": [
+        "MongoDB Atlas Free Tier",
+        "Performance Advisor",
+        "Serverless Functions via MongoDB Realm",
+        "Private Networking & VPC Peering"
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Soft Skills & Interview Preparation",
+      "topics": [
+        "Resume with MongoDB Projects",
+        "Explain Schema Design Decisions",
+        "Problem Solving with Aggregation",
+        "Mock Interviews",
+        "Technical & Behavioral Questions"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Databases": ["MongoDB", "MongoDB Atlas"],
+    "Languages": ["JavaScript", "Mongo Shell"],
+    "ODM/ORM": ["Mongoose"],
+    "Cloud": ["MongoDB Atlas"],
+    "DevOps": ["Docker", "GitHub Actions"],
+    "Monitoring": ["PM2", "Atlas", "Grafana"],
+    "GUI Tools": ["MongoDB Compass", "Robo 3T"],
+    "API Tools": ["Postman"]
+  },
+  "timeline": [
+    {"week": "1–2", "focus": "Database Basics, MongoDB Introduction"},
+    {"week": "3–4", "focus": "CRUD, Aggregations, Indexes"},
+    {"week": "5–6", "focus": "Advanced MongoDB & Schema Design"},
+    {"week": "7–8", "focus": "Node.js + Mongoose Integration"},
+    {"week": "9–10", "focus": "Docker + MongoDB, CI/CD"},
+    {"week": "11–12", "focus": "Real Projects with Atlas + Security"},
+    {"week": "13–14", "focus": "Interview Prep, Final Portfolio"}
+  ]
+},
+
+"uiux":{
+  "title": "UI/UX Designer Roadmap",
+  "goal": "Become a Job-Ready UI/UX Designer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "UI/UX Basics",
+      "topics": [
+        "Difference between UI and UX",
+        "Design Thinking process",
+        "Human-Centered Design",
+        "Double Diamond Framework",
+        "5 Elements of UX (Strategy, Scope, Structure, Skeleton, Surface)"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "UX Research & Analysis",
+      "topics": [
+        "User interviews, Surveys, Observation, Diary studies",
+        "Empathy maps, User personas",
+        "Customer journey mapping",
+        "Competitive analysis",
+        "Heuristic evaluation",
+        "Affinity mapping"
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Information Architecture",
+      "topics": [
+        "Sitemap creation",
+        "Content hierarchy",
+        "Card sorting",
+        "Task flow vs. User flow",
+        "Site navigation strategies"
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Wireframing",
+      "topics": [
+        "Low-fidelity wireframes",
+        "Mid-fidelity prototypes",
+        "UI layout patterns",
+        "Grid systems and spacing",
+        "Mobile-first design"
+      ]
+    },
+    {
+      "level": "4",
+      "title": "UI Design",
+      "topics": [
+        "Visual design principles (Alignment, Balance, Contrast, Hierarchy, Repetition)",
+        "Color theory",
+        "Typography",
+        "Iconography",
+        "Accessibility (WCAG guidelines)",
+        "Design systems & component libraries",
+        "Consistency and UI patterns",
+        "Mobile vs. Desktop UI"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Prototyping & Interaction Design",
+      "topics": [
+        "Interactive mockups",
+        "Microinteractions & animations",
+        "Clickable prototypes",
+        "Transition effects"
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Usability Testing",
+      "topics": [
+        "Moderated and unmoderated testing",
+        "A/B testing",
+        "Usability metrics (SUS, task success rate)",
+        "Feedback collection and analysis",
+        "Iterative design process"
+      ]
+    },
+    {
+      "level": "7",
+      "title": "Handoff to Developers",
+      "topics": [
+        "Design handoff best practices",
+        "Developer collaboration",
+        "Redlining and specs",
+        "Exporting assets",
+        "Responsive design principles (Grid, Breakpoints, Flex)"
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Tools & Software to Master",
+      "topics": [
+        {
+          "Design": ["Figma", "Sketch", "Adobe XD"],
+          "Prototyping": ["Framer", "InVision", "Protopie"],
+          "Research": ["Maze", "Hotjar", "Lookback"],
+          "Collaboration": ["Notion", "FigJam", "Slack", "Miro"],
+          "Developer Handoff": ["Zeplin", "Figma Inspect"],
+          "Animation": ["Lottie", "After Effects"]
+        }
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Front-End Basics (Optional but Recommended)",
+      "topics": [
+        "HTML5/CSS3",
+        "Responsive layouts",
+        "Accessibility (a11y)",
+        "Component-based design thinking"
+      ]
+    },
+    {
+      "level": "10",
+      "title": "Portfolio & Job Preparation",
+      "topics": [
+        "Create 3–5 case studies",
+        "Document: Problem → Research → Wireframes → UI → Prototyping → Testing → Final design",
+        "LinkedIn, Behance, Dribbble profiles",
+        "Resume and mock interviews",
+        "Freelance projects or internships"
+      ]
+    },
+    {
+      "level": "11",
+      "title": "Advanced Concepts (Optional)",
+      "topics": [
+        "UX writing",
+        "Voice UI",
+        "Design for AR/VR",
+        "Dark mode design",
+        "UX for AI/ML-based products"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Design": ["Figma", "Sketch", "Adobe XD"],
+    "Wireframing": ["Balsamiq", "Figma (Wireframe plugin)"],
+    "Prototyping": ["Framer", "Protopie", "InVision"],
+    "Research & Testing": ["Maze", "Hotjar", "Lookback", "Useberry"],
+    "Handoff": ["Zeplin", "Figma Inspect"],
+    "Collaboration": ["Notion", "Miro", "Slack", "FigJam"]
+  },
+  "timeline": [
+    { "week": "1–2", "focus": "UI/UX Basics, Design Thinking" },
+    { "week": "3–4", "focus": "UX Research & Personas" },
+    { "week": "5–6", "focus": "Wireframing & IA" },
+    { "week": "7–8", "focus": "UI Design & Visual Principles" },
+    { "week": "9–10", "focus": "Prototyping, Animation, Interaction" },
+    { "week": "11–12", "focus": "Usability Testing & Feedback" },
+    { "week": "13–14", "focus": "Portfolio Case Study #1" },
+    { "week": "15–16", "focus": "Front-End (Optional)" },
+    { "week": "17–18", "focus": "Portfolio Case Study #2 & Resume" },
+    { "week": "19–20", "focus": "Job Search, Networking, Interviews" }
+  ]
+}
+
+
+
+
+}
