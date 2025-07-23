@@ -1361,7 +1361,160 @@
     { "week": "17–18", "focus": "Portfolio Case Study #2 & Resume" },
     { "week": "19–20", "focus": "Job Search, Networking, Interviews" }
   ]
+},
+
+"aiml":{
+  "title": "AI Engineer Roadmap",
+  "goal": "Become a Job-Ready AI Engineer",
+  "levels": [
+    {
+      "level": "0",
+      "title": "Programming Foundations",
+      "topics": [
+        "Python (Variables, Data Types, Functions, Loops, Decorators, Generators)",
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOP)",
+        "Jupyter Notebook, Google Colab, VS Code/PyCharm"
+      ]
+    },
+    {
+      "level": "1",
+      "title": "Mathematics for AI",
+      "topics": [
+        "Linear Algebra (Vectors, Matrices, Eigenvalues)",
+        "Probability & Statistics (Distributions, Bayes Theorem, Hypothesis Testing)",
+        "Calculus (Derivatives, Gradients, Chain Rule)",
+        "Tools: NumPy, SymPy, Matplotlib, Seaborn"
+      ]
+    },
+    {
+      "level": "2",
+      "title": "Data Handling & Analysis",
+      "topics": [
+        "Data Cleaning & Manipulation",
+        "Exploratory Data Analysis (EDA)",
+        "Structured & Unstructured Data",
+        "Tools: Pandas, NumPy, OpenCV, BeautifulSoup, Scrapy"
+      ]
+    },
+    {
+      "level": "3",
+      "title": "Databases & Data Engineering Basics",
+      "topics": [
+        "SQL (MySQL/PostgreSQL)",
+        "NoSQL (MongoDB)",
+        "ETL and Data Pipelines",
+        "Tools: Apache Airflow, Kafka, AWS S3, GCP Storage"
+      ]
+    },
+    {
+      "level": "4",
+      "title": "Machine Learning",
+      "topics": [
+        "Supervised, Unsupervised, Semi-supervised Learning",
+        "Model Evaluation Metrics (Accuracy, Precision, Recall, F1)",
+        "Cross-Validation, Overfitting, Underfitting",
+        "Algorithms: Linear/Logistic Regression, SVM, Random Forests, KNN, K-Means, Naive Bayes",
+        "Tools: Scikit-Learn, XGBoost, LightGBM, MLFlow, Weights & Biases"
+      ]
+    },
+    {
+      "level": "5",
+      "title": "Deep Learning",
+      "topics": [
+        "Neural Networks: MLP, CNNs, RNNs, LSTMs, GANs",
+        "Activation Functions: ReLU, Sigmoid, Softmax",
+        "Optimization: SGD, Adam",
+        "Loss Functions: MSE, Cross-Entropy",
+        "Tools: TensorFlow, PyTorch, Keras, HuggingFace Transformers"
+      ]
+    },
+    {
+      "level": "6",
+      "title": "Natural Language Processing (NLP)",
+      "topics": [
+        "Text Cleaning, Tokenization",
+        "Word Embeddings: Word2Vec, GloVe, FastText",
+        "Transformers: BERT, GPT, T5",
+        "Tasks: Sentiment Analysis, NER, Summarization",
+        "Tools: spaCy, NLTK, HuggingFace"
+      ]
+    },
+    {
+      "level": "7",
+      "title": "Computer Vision (Optional)",
+      "topics": [
+        "Image Classification, Detection, Segmentation",
+        "Object Detection: YOLO, SSD",
+        "Tools: OpenCV, TensorFlow, PyTorch, Detectron2, FastAI"
+      ]
+    },
+    {
+      "level": "8",
+      "title": "Model Deployment",
+      "topics": [
+        "Model Saving (Pickle, Joblib, ONNX)",
+        "Flask / FastAPI for APIs",
+        "Dockerizing AI Apps",
+        "Streamlit / Gradio for UI",
+        "Tools: Docker, Flask, FastAPI, Streamlit, Gradio"
+      ]
+    },
+    {
+      "level": "9",
+      "title": "Cloud & MLOps",
+      "topics": [
+        "Training & Hosting on AWS/GCP/Azure",
+        "Model Monitoring & Retraining Pipelines",
+        "Tools: SageMaker, Vertex AI, MLFlow, Kubeflow, DVC"
+      ]
+    },
+    {
+      "level": "10",
+      "title": "Version Control & Collaboration",
+      "topics": [
+        "Git, GitHub",
+        "Documentation with Notion, Markdown"
+      ]
+    },
+    {
+      "level": "11",
+      "title": "Projects & Portfolio",
+      "topics": [
+        "EDA Project (Kaggle)",
+        "End-to-End ML Model",
+        "Deep Learning App (e.g., Image Classifier)",
+        "NLP Project (Transformers)",
+        "Cloud-Deployed ML Pipeline",
+        "Extras: Kaggle Competitions, Open Source Contributions, Blog Articles"
+      ]
+    },
+    {
+      "level": "12",
+      "title": "Job Preparation",
+      "topics": [
+        "System Design for ML",
+        "Behavioral Interviews",
+        "Problem-Solving on LeetCode",
+        "Mock Interviews"
+      ]
+    }
+  ],
+  "tools_and_software": {
+    "Languages": ["Python", "SQL", "Bash"],
+    "Libraries": [
+      "NumPy", "Pandas", "Scikit-Learn", "TensorFlow", "PyTorch",
+      "Keras", "OpenCV", "HuggingFace", "NLTK", "spaCy"
+    ],
+    "Tools": [
+      "Jupyter", "VS Code", "Google Colab", "GitHub", "Docker",
+      "MLFlow", "Streamlit", "Airflow", "FastAPI", "Flask"
+    ],
+    "Cloud Platforms": ["AWS", "GCP", "Azure"],
+    "Version Control": ["Git", "GitHub"]
+  }
 }
+
 
 
 

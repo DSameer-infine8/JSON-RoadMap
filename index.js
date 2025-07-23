@@ -8,7 +8,7 @@ const road = document.querySelector(".road");
 
 let roadmapData = {};
 let skill = {};
-let name = "uiux";
+let name = "front";
 
 
 async function loadData(key) {
@@ -20,7 +20,12 @@ async function loadData(key) {
         useSkillData();     // You can now use it elsewhere
         addEle();
         generateHTML();
-        updateRoadHeight();
+        enableGridToggle();
+
+        setTimeout(() => {
+            toggleListsOnly();
+            updateRoadHeight();
+        }, 0);
     } catch (error) {
         console.error('Error:', error);
     }
@@ -124,6 +129,8 @@ function generateHTML() {
         if (!level) return;
 
         const div = document.createElement('div');
+        const box = document.createElement('div');
+        box.classList.add('box');
         const ul = document.createElement('ul');
 
         level.topics.forEach(topic => {
@@ -133,7 +140,7 @@ function generateHTML() {
 
                 const label = document.createElement('label');
                 label.className = 'container';
-                label.innerHTML = '<input checked="checked" type="checkbox"><div class="checkmark"></div>';
+                label.innerHTML = '<input type="checkbox"><div class="checkmark"></div>';
 
                 const span = document.createElement('span');
                 span.textContent = topic;
@@ -142,6 +149,7 @@ function generateHTML() {
                 li.appendChild(span);
 
                 ul.appendChild(li);
+                ul.classList.add("lists");
             } else if (typeof topic === "object") {
                 for (let key in topic) {
                     const li = document.createElement('li');
@@ -157,7 +165,7 @@ function generateHTML() {
 
                             const label = document.createElement('label');
                             label.className = 'container';
-                            label.innerHTML = '<input checked="checked" type="checkbox"><div class="checkmark"></div>';
+                            label.innerHTML = '<input type="checkbox"><div class="checkmark"></div>';
 
                             const span = document.createElement('span');
                             span.textContent = subTopic;
@@ -180,7 +188,7 @@ function generateHTML() {
 
                                 const label = document.createElement('label');
                                 label.className = 'container';
-                                label.innerHTML = '<input checked="checked" type="checkbox"><div class="checkmark"></div>';
+                                label.innerHTML = '<input type="checkbox"><div class="checkmark"></div>';
 
                                 const span = document.createElement('span');
                                 span.textContent = subTopic;
@@ -203,6 +211,7 @@ function generateHTML() {
 
                     li.appendChild(subUl);
                     ul.appendChild(li);
+                    ul.classList.add("lists");
                 }
             }
 
@@ -210,13 +219,27 @@ function generateHTML() {
         });
 
         div.appendChild(ul);
+        container.append(box);
         container.appendChild(div);
     });
 }
 
 
+function enableGridToggle() {
+    const buttons = document.querySelectorAll('.click');
 
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const gridLine = button.closest('.grid-line');
+            const list = gridLine.querySelector('.lists');
 
+            if (list) {
+                list.style.display = list.style.display === 'block' ? 'none' : 'block';
+            }
+            updateRoadHeight();
+        });
+    });
+}
 
 
 
