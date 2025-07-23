@@ -9,6 +9,7 @@
             --bg-100: #1D1F21;
             --bg-200: #2c2e30;
             --bg-300: #444648;
+            
 }
 
 *{
@@ -58,6 +59,7 @@ body{
     height: 4450px;
     border-radius: 0 0 2rem 2rem;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 .center-line {
@@ -89,6 +91,7 @@ body{
 }
 
 h1 {
+    position: absolute;
     background-color: #ff983f;
     height: 60px;
     width: 60px;
@@ -96,8 +99,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
-
 
 
 
@@ -123,6 +126,7 @@ li{
     padding:5px;
     list-style-type: none;
     font-size: 20px;
+    color: #ffffff;
 
 }
 
@@ -175,6 +179,10 @@ ul{
     flex-direction: column;
 }
 
+.yes{
+    position: relative;
+}
+
 
 
 
@@ -187,7 +195,7 @@ ul{
     --input-out-of-focus: #ccc;
     --bg-color: #fff;
     --bg-color-alt: #666;
-    --main-color: #323232;
+    --main-color: #161616;
     position: relative;
     cursor: pointer;
 }
@@ -257,9 +265,43 @@ label {
 }
 
 .lists{
+    
     display: none;
+}
+
+.right .lists{
+    margin-left: 25px;
+}
+
+.left .lists{
+    margin-right: 35px;
 }
 
 .click{
     cursor: pointer;
+}
+
+
+.box{
+    position:absolute;
+    height: 200px;
+    width: 50px;
+    border: 15px solid black;
+    border-radius: 2rem;
+    display: none;
+}
+
+.right .box{
+    left:-40px;
+    z-index: 0;
+}
+
+.left .box{
+    right: -40px;
+    z-index: 0;
+    top:58px;
+}
+
+.display{
+    display: none;
 }

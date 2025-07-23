@@ -3,12 +3,12 @@ const title = document.querySelector(".skill-title");
 const contain = document.querySelector(".grid-container");
 const mid = document.querySelectorAll(".middle");
 const road = document.querySelector(".road");
-
+const listContainers = document.querySelectorAll(".lists");
 
 
 let roadmapData = {};
 let skill = {};
-let name = "front";
+let name = "mongoDB";
 
 
 async function loadData(key) {
@@ -86,8 +86,8 @@ const addEle = () => {
 function updateRoadHeight() {
     setTimeout(() => {
         const height = contain.offsetHeight;
-        main.style.height = `${height + 50}px`;
-        road.style.height = `${height + 10}px`;
+        main.style.height = `${height + 70}px`;
+        road.style.height = `${height + 70}px`;
         console.log(height);
         console.log("Updated height:", height); // For debugging
     }, 300); // try 300ms instead of 0
@@ -227,19 +227,31 @@ function generateHTML() {
 
 function enableGridToggle() {
     const buttons = document.querySelectorAll('.click');
+    const boxes = document.querySelectorAll(".box");
+    const listContainers = document.querySelectorAll(".lists");
 
-    buttons.forEach(button => {
+    buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
             const gridLine = button.closest('.grid-line');
             const list = gridLine.querySelector('.lists');
 
-            if (list) {
-                list.style.display = list.style.display === 'block' ? 'none' : 'block';
+            if (list && boxes[index]) {
+                // Toggle display
+                list.style.display = getComputedStyle(list).display === 'none' ? 'block' : 'none';
+                boxes[index].style.display = getComputedStyle(boxes[index]).display === 'none' ? 'block' : 'none';
+
+                // Adjust height
+                const sty = getComputedStyle(listContainers[index]);
+                boxes[index].style.height = `${(parseInt(sty.height) * 1)}px`;
+
+                console.log(index);
+                updateRoadHeight();
             }
-            updateRoadHeight();
         });
     });
 }
+
+window.addEventListener('DOMContentLoaded', enableGridToggle);
 
 
 
